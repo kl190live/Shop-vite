@@ -9,7 +9,7 @@ function Kiiras()
   table!.innerHTML='';
   for(const t of List)
   {
-    let tr=document.createElement('tr');
+    let tr=document.createElement('tb');
     tr.textContent=`${t.name} ${t.price} ${t.product}`
     
     table!.appendChild(tr);
