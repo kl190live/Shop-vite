@@ -7,17 +7,19 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <label>Name: <input type="text" id="name"></label>
-    <label >Price: <input type="number" id="price"></label>
-    <label >Product Code: <input type="text" id="productCode"></label>
-    <button type="submit" id="button">Beolvasás</button>
+    <div class="container">
+    <label>Name: <input type="text" id="name"></label><br>
+    <label >Price: <input type="number" id="price"></label><br>
+    <label >Product Code: <input type="text" id="productCode" max="11"></label><br>
+    <button id="button">Beolvasás</button>
     <p id="error"></p>
     <table id="table">
       <th>Name</th>
       <th>Price</th>
-      <th>Product Code</th>
+      <th>ProductCode</th>
     </table>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+  </div>
   </body>
 </html>

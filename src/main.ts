@@ -1,7 +1,7 @@
 import { termek } from "./Termek";
+import "bootstrap/dist/css/bootstrap.css"
 
 let List : termek[]=[];
-
 
 function Kiiras()
 {
@@ -11,7 +11,7 @@ function Kiiras()
   {
     let tr=document.createElement('tr');
     tr.textContent=`${t.name} ${t.price} ${t.product}`
-
+    
     table!.appendChild(tr);
   }
 }
@@ -31,7 +31,7 @@ function newProduct()
 
 function init()
 {
-  document.getElementById('button')!.addEventListener('submit',newProduct)
+  document.getElementById('button')!.addEventListener('click',newProduct)
 }
 
 document.addEventListener('DOMContentLoaded', init)

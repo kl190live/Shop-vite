@@ -10,7 +10,7 @@ export class termek{
         {
             throw new Error("1 és 100 között adja meg az árát.");
         }
-        else if(product.trim()=='' && product.length==11)
+        else if(product.trim()=='' || product.length!=11)
         {
             throw new Error("A productCode nem lehet üres és 11 karakternek kell lenie.");
         }
